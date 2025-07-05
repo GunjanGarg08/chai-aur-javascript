@@ -41,3 +41,29 @@ console.log(typeof myFunction); // function
 
 // Link to Read
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+// Memory Allocation In javaScript
+
+// Stack (Primitive), Heap (Non-Primitive)
+// Stack main krte hai toh copy milta hai and heap main original value ka reference milta hai
+
+let myYoutubeName = "gunjangargcom"; // Stack
+
+let anotherName = myYoutubeName
+console.log(anotherName); // gunjangargcom
+anotherName = "gunjan"
+console.log(myYoutubeName); // gunjangargcom
+console.log(anotherName); // gunjan
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "gunjan@google.com"
+
+console.log(userOne.email); // gunjan@google.com
+console.log(userTwo.email); // gunjan@google.com
