@@ -70,3 +70,53 @@ console.log(Object.entries(appUser)); // [ [ 'id', '123abc' ], [ 'name', 'Sammy'
 // toh issliye we can ask ki value exist krti hai ya ni
 console.log(appUser.hasOwnProperty('isLoggedIn')); // true
 console.log(appUser.hasOwnProperty('isLogged')); // false
+
+
+// Destructuring... abb yeh Array ki bhi hoti hai and Objects ki bhi... abhi Object ki dekhenge... Array ki kisi aur din dekhlenge
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hemant"
+}
+
+// agar haame koi value ko extract karna hai
+// course.courseInstructor
+
+// better method
+const {courseInstructor} = course
+console.log(courseInstructor); // hemant
+
+// of we say ki courseInstructor bhout bada name hai toh aise usse short name dekar access bhi karr saktein hai
+const {courseInstructor: instructor} = course
+console.log(instructor); // hemant
+
+// This type of Destructuring used in REACT
+// baar baar, props.company vgehra likhne sa aacha aise sidha company likh saktein hai
+// const navbar = ({company}) => {
+
+// } // props
+
+// navbar(company = "gunjan")
+
+
+// APIs - apna kaam kisi aur ka sarr par daal dena
+// pehle info aati hai XML main.. abb aati hai JSON Format main
+
+// {
+//     "name": "gunjan",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+// https://api.github.com/users/hiteshchoudhary
+
+// hamesha api zaroori nahi json format main millein... kabhi kabhi array ki form main bhi milti hai
+
+[
+    {},
+    {},
+    {}
+]
+
+// Json Formatter par jakr api sa joh json data aayega hai usko study krr sktein hai samajhne ka liye
+
