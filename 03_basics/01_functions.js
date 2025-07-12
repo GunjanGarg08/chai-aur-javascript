@@ -53,3 +53,46 @@ console.log(loginUserMessage("Gunjan")); // Gunjan just logged in
 console.log(loginUserMessage("")); // just logged in, Empty String passed toh kuch ni aayega
 console.log(loginUserMessage()); // undefined just logged in ; but jab koi value hi pass ni ki... tab undefined aata hai, toh iske liye bhi if statement sa check karr saktein hai
 
+// function calculateCartPrice(num1) {
+//     return num1;
+// }
+// console.log(calculateCartPrice(200)) // 200
+// console.log(calculateCartPrice(200, 400, 500)) // 200, by chance baad main shopping cart main aur zyada add ho gya toh
+// so, for this we use REST operator, sabko ek array main daal denge
+// function calculateCartPrice(...num1) { // yeh "..." ko hi SPREAD/REST opearator bolte hai, iske use case par depend krta hai ki isse kya bolenge
+//     return num1;
+// }
+// console.log(calculateCartPrice(200, 400, 500)) //[ 200, 400, 500 ]
+
+function calculateCartPrice(val1, val2, ...num1) {
+    return num1;
+}
+console.log(calculateCartPrice(200, 400, 500, 2000)) //[ 500, 2000 ]
+
+const user = {
+    username: "gunjan",
+    price: 199
+}
+
+function handleObject(anyobject) {
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+// handleObject(user); // output will come
+
+// Abb agar humne uppar object main "price" ki jagaha "prices" likh diya toh voh niche "undefined" aayega... abb agar object name galat de diya toh voh bhi aise galat print ho jayega...
+// Toh issiliye log "TypeScript" use krna pasand krte hai... "JavaScript" main bhi ho jata hai bass thoda code likhne padhta hai
+
+// handleObject({
+//     username: "gunjan",
+//     price: 399
+// })
+// Toh zaroori nahi hai ki hum object aise name pass karrein... aise direct user banake bhi pass krte hai
+
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray) {
+    return getArray[1];
+}
+// console.log(returnSecondValue(myNewArray)); // 400
+console.log(returnSecondValue([200, 400, 500, 1000]));
