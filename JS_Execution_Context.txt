@@ -1,0 +1,15 @@
+JavaScript Execution Context
+// Aapne joh bhi file banayi hai usko js run/execute kaise karegi
+// Toh run krne ka liye js, program ko 2 phases main run krti hai
+
+// Toh jab bhi java file run karegi toh yeh Global Execution context toh banega hi, joh "this" keyword main store hota hai
+{} -> Global Execution Context -> "this"
+// Toh browser ka andar iski value Window aati hai, yeh yaad rakhna, INTERVIEW main puch lete hai
+
+Types:
+1. Global Execution Context
+2. Function Execution Context
+3. Eval Execution Context
+
+// 1. (Memory) Creation Phase
+// 2. Execution Phase
