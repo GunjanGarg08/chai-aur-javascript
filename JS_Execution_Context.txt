@@ -13,3 +13,28 @@ Types:
 
 // 1. (Memory) Creation Phase
 // 2. Execution Phase
+
+// How will below code execute in the JavaScript
+let val1 = 10
+let val2 = 5
+function addNum(num1, num2) {
+    let total = num1 + num2
+    return total
+}
+let result1 = addNum(val1, val2)
+let result2 = addNum(10, 2)
+
+1. Global Execution/Environment -> allocated inside "this"
+2. Memory Phase -> val1: undefined, val2: undefined, addNum: defination (Line 1-6 executed), result1: undefined, result2: undefined (Line 7-8 executed)
+3. Execution Phase -> val1: 10, val2: 5
+now next comes addNum... toh yeh function apna ek alag sa Execution Context banaega...
+So, in that a "new variable environment" and "execution thread" will be formed...
+jitni baar yeh function bante hai... utni baar hi yeh new environment and all bnta hai
+so, now again the "memory creation phase" and "Execution phase" will run
+so Memory Phase first -> val1: undefined, val2: undefined, total: undefined
+Execution Context -> num1: 10, num2: 5, total: 15... toh yeh total abb Global Execution Context main run ho jaata hai
+Toh joh yeh naya bana tha toh yeh itna kaam hoone ka baad abb delete bhi hoga
+
+3. result1: 15, result2: bhi ek function hai... toh abb firse ek new box create hoga
+
+// Call Stack
