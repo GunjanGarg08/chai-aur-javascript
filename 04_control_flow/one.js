@@ -11,3 +11,31 @@
 // }
 
 // Comparison Operators
+// <, >, <=, >=, == (just checks value), === (checks both value and datatype), !=, !==
+
+if ( 2 == "2" ) {
+    console.log("executed");
+} // executed
+
+if ( 2 === "2" ) {
+    console.log("executed");
+} // here, nothing will be displayed as the condition becomes false because of different datatypes
+
+// const temperature  = 41;
+
+// if( temperature < 50 ) {
+//     console.log("less than 50");
+// }
+// console.log("temperature is greater then 50")
+// so, here both the console statements will be printed
+// so, here we will use else statement
+
+const temperature = 41;
+
+if( temperature === 41 ) {
+    console.log("less than 50");
+} else {
+    console.log("temperature is greater than 50");
+}
+console.log("Execute");
+// less than 50, Execute
