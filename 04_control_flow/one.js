@@ -49,3 +49,10 @@ if ( 2 === "2" ) {
 
 // console.log(`User Power: ${power}`); // inside "if" toh koi problem nahi aaygi... but outside main ERROR aayega... because "power" variable ki scope sirf "if" statements ka andar hi valid hai... bhar nahi
 
+
+// Short-hand Notation
+const balance = 1000;
+// if (balance > 500) console.log("Test"); // Implicit Scope, yeh ek hi line main execute hota hai and last main "semicolon" phr mandatory ho jata hai
+
+// if(balance > 500) console.log("Test"),
+// console.log("Test2"); // but yeh bht hi unreadable code hai... koi sense nahi hai iski... very immature code, not a good practice
