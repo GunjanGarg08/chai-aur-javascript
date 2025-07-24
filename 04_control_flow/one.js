@@ -68,15 +68,15 @@ const balance = 1000;
 //     console.log("less then 1200"); // This will be executed
 // }
 
-const userLoggedIn = true;
-const debitCard = true;
-const loggedInFromGoogle = false;
-const loggedInFromEmail = true;
+// const userLoggedIn = true;
+// const debitCard = true;
+// const loggedInFromGoogle = false;
+// const loggedInFromEmail = true;
 
-if (userLoggedIn && debitCard && 2==3) {
-    console.log("Allow to buy course");
-}
+// if (userLoggedIn && debitCard && 2==3) {
+//     console.log("Allow to buy course");
+// }
 
-if (loggedInFromGoogle || loggedInFromEmail) {
-    console.log("User logged in");
-}
+// if (loggedInFromGoogle || loggedInFromEmail) {
+//     console.log("User logged in");
+// }
