@@ -29,3 +29,14 @@ for (let index = 0; index < myArray.length; index++) {
     const element = myArray[index];
     console.log(element);
 }
+
+// Break and Continue
+
+for (let index = 1; index <= 20; index++) {
+    if (index == 5) {
+        console.log(`Detected 5`);
+        // break; // Loop stopped
+        continue; // Continued after 5
+    }
+    console.log(`Value of index is ${index}`);
+}
